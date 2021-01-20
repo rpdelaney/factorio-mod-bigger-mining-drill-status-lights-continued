@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+pkg="bigger-mining-drill-status-lights-continued"
+
+version="$(jq -r .version < ./"$pkg"/info.json)"
+
+zip -r "$pkg"_"$version".zip ./"$pkg"
